@@ -1,4 +1,8 @@
+import java.util.ArrayList;
+
 public class EarthText implements EarthCellPhone{
+	
+	ArrayList<String> validLanguages;
 
 	@Override
 	public void sendMessage(String languageType, String fileName) throws InvalidLanguageException {
