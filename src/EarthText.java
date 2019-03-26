@@ -26,8 +26,7 @@ public class EarthText implements EarthCellPhone{
 		}
 		
 		if(invalidLanguage) {
-			new InvalidLanguageException(languageType + " not supported.");
-			return;
+			throw new InvalidLanguageException(languageType + " not supported.");
 		}
 		
 		try {
