@@ -17,13 +17,6 @@ public class VulcanText implements AlienCellPhone{
 			Scanner scanner = new Scanner(new File(fileName));
 			while(scanner.hasNext()) {
 				message = scanner.nextLine();
-				message = message.replace('a', 't');
-				message = message.replace('e', 'B');
-				message = message.replace('i', 'n');
-				message = message.replace('o', 'n');
-				message = message.replace('u', 'q');
-				message = message.replace('t', 'v');
-				message = message.replace('n', 'w');
 			}
 			scanner.close();
 		} catch (FileNotFoundException e) {

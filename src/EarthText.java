@@ -48,6 +48,7 @@ public class EarthText implements EarthCellPhone{
 			while(scanner.hasNext()) {
 				message = scanner.nextLine();
 			}
+			scanner.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}

@@ -31,7 +31,7 @@ public class Main {
 		    System.out.println();
 		    
 		    // Send unsupported language message
-		    et.sendMessage("non-fed", "non-fed.txt");
+		    et.sendMessage("Martian", "martian_message.txt");
 			
 			
 		} catch (InvalidLanguageException e) {
