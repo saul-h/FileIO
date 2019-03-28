@@ -3,14 +3,41 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
+/**
+ * UniversalTranslator class takes in
+ * 
+ * @author Abel
+ * @author Saul
+ */
 public class UniversalTranslator implements EarthCellPhone{
 	
+	/**
+	 * Denotes the language messages will be translated to.
+	 */
 	private AlienCellPhone alienTextMessage;
 	
+	/**
+	 * Default constructor with null AlienCellPhone
+	 */
+	public UniversalTranslator() {
+		this.alienTextMessage = null;
+	}
+	
+	/**
+	 * Constructs a translator to translate to the specified language.
+	 * 
+	 * @param mess language message will be translated to
+	 */
 	public UniversalTranslator(AlienCellPhone mess) {
 		this.alienTextMessage = mess;
 	}
 	
+	/**
+	 * Translates the message in the file to the Alien Language denoted by
+	 * which type (Vulcan, Klingon) of AlienCellPhone is being used.
+	 * 
+	 * @param fileName file to be translated into Alien Language
+	 */
 	public void readMessage(String fileName) {
 		String message = null;
 		
@@ -75,7 +102,21 @@ public class UniversalTranslator implements EarthCellPhone{
 		alienTextMessage.alienReadText(alienTextMessage.translateText(fileName));
 	}
 	
+	/**
+	 * Sends a message in an alien language to the specified target file
+	 * 
+	 * @param languageType name of language
+	 * @param fileName name of target file
+	 */
 	public void sendMessage(String languageType, String fileName) {
 		alienTextMessage.alienSendText(fileName);
+	}
+
+	/**
+	 * Returns the type of AlienCellPhone used in this instance.
+	 */
+	@Override
+	public String toString() {
+		return "UniversalTranslator [alienTextMessage=" + alienTextMessage + "]";
 	}
 }

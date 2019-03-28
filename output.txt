@@ -1,0 +1,10 @@
+Earth message sent.
+Earth: This is earth to Earth text.
+
+Klingon message sent.
+Klingon: Thws ws Bvrvh vw Klwwgww vBxv.
+
+Vulcan message sent.
+Vulcan: ahgs gs qbrqh ql Vmlcbm qqxq.
+
+Martian not supported.

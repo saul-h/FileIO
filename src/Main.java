@@ -1,6 +1,12 @@
 /*
  * Abel Acosta
  * Saul Hernandez
+ * March 28, 2019
+ * Purpose: This program simulates an Earth phone that is able to send
+ * messages to other Earth phones as well as send messages through a
+ * UniveralTranslator to a universal translator.
+ * Outputs a message in English, and that message translated to 
+ * Klingon and Vulcan.
  */
 public class Main {
 
